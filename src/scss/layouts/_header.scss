@@ -1,0 +1,7 @@
+@use '../abstracts' as *;
+
+.header {
+  max-width: 100%;
+  @include grid(center);
+  gap:$gap 
+}
