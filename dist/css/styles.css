@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Karla:400|Spectral:400");@-webkit-keyframes spinner{to{transform:rotate(1turn)}}@keyframes spinner{to{transform:rotate(1turn)}}html{font-size:100%}body{background:#fff;color:#0f172a;display:grid;font-family:Karla,sans-serif;font-weight:400;line-height:1.75;place-items:center}a{text-decoration:none}.title{text-align:center}*,:after,:before{box-sizing:border-box}
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;700&display=swap");@-webkit-keyframes spinner{to{transform:rotate(1turn)}}@keyframes spinner{to{transform:rotate(1turn)}}html{font-size:100%}body{background:#fff;color:#0f172a;display:grid;font-family:IBM Plex Sans,sans-serif;font-weight:400;line-height:1.75;place-items:center}a{text-decoration:none}.title{text-align:center}*,:after,:before{box-sizing:border-box}
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */html{-webkit-text-size-adjust:100%;line-height:1.15}body{margin:0}main{display:block}a{background-color:transparent}
 /*# sourceMappingURL=styles.css.map */
