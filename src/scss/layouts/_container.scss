@@ -8,6 +8,7 @@
   position: relative;
   background-color: transparent;
   gap: $gap * 6.4;
+  overflow: hidden;
 
   &::before {
     content: '';
