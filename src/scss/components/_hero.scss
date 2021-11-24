@@ -1,0 +1,17 @@
+@use '../abstracts' as *;
+
+.hero {
+  @include grid(center);
+  gap: $gap * 2;
+
+  .primaryHeading {
+    font-size: 40px;
+    line-height: 48px;
+    letter-spacing: -0.45px;
+    margin: 0;
+  }
+
+  .body2 {
+    margin: 0;
+  }
+}
