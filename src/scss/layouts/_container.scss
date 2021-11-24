@@ -5,23 +5,6 @@
   max-width: 1440px;
   @include grid(center);
   position: relative;
-  background-color: transparent;
+  
   gap: $gap * 6.4;
-  overflow: hidden;
-
-  &::before {
-    content: '';
-    position: absolute;
-    // border: 5px solid red;
-    top: -104px;
-    left: 159px;
-    width: 281.4px;
-    height: 480px;
-    max-width: 1440px;
-    padding: 0;
-    background: url('../assets/bg-main-mobile.png') no-repeat left center;
-    background-size: cover;
-    background-blend-mode: normal;
-    z-index: 9;
-  }
 }
