@@ -3,7 +3,7 @@
 .header {
   width: 100%;
   @include flex(column, start, center);
-  gap: $gap * 2;
+  gap: $gap * 6.4;
 
   .primaryHeading {
     font-size: 40px;

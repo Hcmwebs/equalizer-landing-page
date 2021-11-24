@@ -7,6 +7,7 @@
   padding: 0 $padding * 2;
   position: relative;
   background-color: transparent;
+  gap:$gap*6.4
 
   &::before {
     content: '';
