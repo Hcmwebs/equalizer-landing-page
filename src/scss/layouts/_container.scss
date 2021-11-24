@@ -4,7 +4,6 @@
   width: 100%;
   max-width: 1440px;
   @include grid(center);
-  padding: 0 $padding * 2;
   position: relative;
   background-color: transparent;
   gap: $gap * 6.4;
