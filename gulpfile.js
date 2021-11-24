@@ -41,7 +41,7 @@ function jsTask() {
 //Images jsTask
 
 function imgTask() {
-  return src(files.imgPath).pipe(image()).pipe(dest('dist/images'));
+  return src(files.imgPath).pipe(image()).pipe(dest('dist/assets'));
 }
 
 // Cachebusting  task
