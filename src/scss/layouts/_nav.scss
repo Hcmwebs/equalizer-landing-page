@@ -1,0 +1,10 @@
+@use '../abstracts' as *;
+
+.nav {
+  @include grid(center);
+
+
+  .imgContainer {
+    width: 150px;
+  }
+}
