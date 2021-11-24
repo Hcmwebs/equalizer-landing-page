@@ -7,7 +7,7 @@
   padding: 0 $padding * 2;
   position: relative;
   background-color: transparent;
-  gap:$gap*6.4
+  gap: $gap * 6.4;
 
   &::before {
     content: '';
@@ -19,7 +19,7 @@
     height: 480px;
     max-width: 1440px;
     padding: 0;
-    background: url('../assets/bg-main-mobile.png') no-repeat center center;
+    background: url('../assets/bg-main-mobile.png') no-repeat left center;
     background-size: cover;
     background-blend-mode: normal;
     z-index: 9;
