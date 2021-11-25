@@ -1,0 +1,26 @@
+@use '../abstracts' as *;
+
+.card {
+  max-width: 100%;
+  width: 400px;
+  padding: 0 $padding * 2;
+  @include grid(center);
+  border-radius: $borderRadius * 3;
+  background-color: $black;
+
+  &__header {
+    position: relative;
+
+    .illustration {
+      position: absolute;
+      top: 100px;
+      left: 0;
+      right: 0;
+      bottom: 0;
+    }
+  }
+  &__body {
+  }
+  &__footer {
+  }
+}
