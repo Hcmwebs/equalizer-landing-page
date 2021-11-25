@@ -1,27 +1,33 @@
 @use '../abstracts' as *;
 
 .card {
-  max-width: 100%;
-  width: 400px;
-  padding: 0 $padding * 2;
+  width: 100%;
   @include grid(center);
-
-  background-color: $black;
   border-radius: $borderRadius;
+  background-color: $black;
+  position: relative;
+
+  &::before {
+    content: '';
+    width: 312px;
+    height: 468px;
+    position: absolute;
+    top: 0;
+    background: $black url(../assets/bg-pattern-2.svg) no-repeat center
+      center/contain;
+  }
 
   &__header {
-    position: relative;
-
-    .illustration {
-      position: absolute;
-      top: -100px;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      z-index: 9;
-    }
+    transform: translateY(-100px);
+    padding: 0 $padding * 2;
   }
   &__body {
+    background-color: $primaryRed;
+    color: $white;
+
+    .container {
+      padding: 0 $padding * 2;
+    }
   }
   &__footer {
   }
