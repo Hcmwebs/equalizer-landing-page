@@ -4,10 +4,6 @@
 .main {
   max-width: 100%;
   @include grid(center);
-  overflow: hidden;
+  margin-top: 100px;
   border-radius: $borderRadius * 3;
-
-  .container {
-    overflow: hidden;
-    }
 }
