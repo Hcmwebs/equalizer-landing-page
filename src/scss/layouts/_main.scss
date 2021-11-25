@@ -1,0 +1,13 @@
+@use '../abstracts' as *;
+@use '../components/card';
+
+.main {
+  max-width: 100%;
+  @include grid(center);
+  overflow: hidden;
+  border-radius: $borderRadius * 3;
+
+  .container {
+    overflow: hidden;
+    }
+}
