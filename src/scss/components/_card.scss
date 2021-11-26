@@ -1,6 +1,7 @@
 @use '../abstracts' as *;
 
-.card {
+.cards {
+  max-width: 100%;
   width: 100%;
   @include grid(center);
   border-radius: $borderRadius;
@@ -9,26 +10,26 @@
 
   &::before {
     content: '';
-    width: 312px;
+    width: 100%;
     height: 468px;
     position: absolute;
     top: 0;
     background: $black url(../assets/bg-pattern-2.svg) no-repeat center
       center/contain;
   }
+}
+.card {
+  max-width: 100%;
+  @include grid(center);
+  border-radius: $borderRadius;
+  position: absolute;
 
   &__header {
-    transform: translateY(-100px);
-    padding: 0 $padding * 2;
+    width: 208.97px;
+    top: -100px;
   }
-  &__body {
-    background-color: $primaryRed;
-    color: $white;
 
-    .container {
-      padding: 0 $padding * 2;
-    }
-  }
-  &__footer {
+  &__body {
+    width: 400px;
   }
 }
