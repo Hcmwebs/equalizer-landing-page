@@ -5,6 +5,5 @@
   max-width: 1440px;
   @include grid(center);
   position: relative;
-  
   gap: $gap * 6.4;
 }
