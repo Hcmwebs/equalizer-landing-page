@@ -1,0 +1,38 @@
+@use '../abstracts' as *;
+
+.footer {
+  z-index: 9;
+  width: 100%;
+  margin-top: 440px;
+  padding-bottom: $padding * 6.7;
+
+  .container {
+    @include flex(column, space-between, center);
+    padding: $padding $padding * 2;
+    .footer--header {
+      width: 100%;
+      @include grid(center);
+      gap: $gap * 3.2;
+
+      .logo {
+        justify-self: start;
+      }
+      .credits {
+        .body2 {
+          margin: 0;
+        }
+      }
+    }
+    .footer--body {
+      width: 100%;
+      @include grid(center);
+
+      .socialLinks {
+        margin-top: 32px;
+        justify-self: start;
+        @include flex(row, center, center);
+        gap: $gap * 2;
+      }
+    }
+  }
+}
