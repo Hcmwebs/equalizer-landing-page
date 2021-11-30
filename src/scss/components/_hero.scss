@@ -1,17 +1,57 @@
 @use '../abstracts' as *;
 
 .hero {
+  width: 100%;
   @include grid(center);
-  gap: $gap * 2;
+  justify-content: start;
+  gap: $gap * 3;
+  border: 5px solid red;
 
   .primaryHeading {
     font-size: 40px;
     line-height: 48px;
     letter-spacing: -0.45px;
     margin: 0;
+    text-transform: initial;
   }
 
   .body2 {
     margin: 0;
+    justify-self: start;
+  }
+}
+
+@media (min-width: $tablets) {
+  .hero {
+    max-width: 520px;
+
+    .primaryHeading {
+      font-size: 64px;
+      line-height: 64px;
+      letter-spacing: -0.73px;
+    }
+
+    .body2 {
+      font-size: 18px;
+      line-height: 28px;
+      letter-spacing: 0;
+    }
+  }
+}
+@media (min-width: $bigScreens) {
+  .hero {
+    max-width: 1015px;
+
+    .primaryHeading {
+      font-size: 88px;
+      line-height: 88px;
+      letter-spacing: -1px;
+    }
+
+    .body2 {
+      font-size: 20px;
+      line-height: 34px;
+      letter-spacing: 0;
+    }
   }
 }
