@@ -7,10 +7,11 @@
   border: transparent;
   border-radius: $borderRadius;
   letter-spacing: $letterSpacing;
-  padding: 0.375rem 0.75rem; 
+  padding: 0.375rem 0.75rem;
   transition: $transition;
   text-transform: capitalize;
   display: inline-block;
+  
 
   &:hover {
     background: $white;
