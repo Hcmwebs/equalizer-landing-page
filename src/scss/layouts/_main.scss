@@ -9,3 +9,10 @@
   border-radius: $borderRadius;
   margin-top: 100px;
 }
+
+@media (min-width: $tablets) {
+  .main {
+    padding: 0 $padding * 2;
+    justify-content: flex-start;
+  }
+}

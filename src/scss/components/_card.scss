@@ -22,7 +22,7 @@
 }
 .card {
   max-width: 100%;
-  width: 375px;
+  width: 100%;
   @include grid(center);
   border-radius: $borderRadius;
   overflow: hidden;
@@ -84,6 +84,41 @@
         font-weight: $bold;
         height: 61px;
         text-transform: initial;
+      }
+    }
+  }
+}
+
+@media (min-width: $tablets) {
+  .cards {
+    width: 696px;
+
+    .card {
+      width: 400px;
+      &__header {
+        width: 270px;
+        left: 9%;
+      }
+      &__body {
+        right: 9%;
+        top: 30%;
+      }
+    }
+  }
+}
+@media (min-width: $bigScreens) {
+  .cards {
+    width: 1110px;
+
+    .card {
+      width: 446px;
+      &__header {
+        width: 270px;
+        left: 210px;
+      }
+      &__body {
+        right: 45px;
+        top: 20%;
       }
     }
   }
