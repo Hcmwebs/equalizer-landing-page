@@ -2,16 +2,16 @@
 
 .header {
   width: 100%;
-  @include flex(column, flex-start, center);
+  padding: $padding $padding * 2;
+  @include flex(column, center, flex-start);
   gap: $gap * 2;
-  background-color: transparent;
-  overflow: hidden;
   position: relative;
+  background-color: transparent;
 
   &::before {
     content: '';
     position: absolute;
-    border: 5px solid red;
+    //border: 5px solid red;
     top: 0;
     right: 0;
     width: 100%;
@@ -19,25 +19,17 @@
     max-width: 1440px;
     padding: 0;
     background-image: url('../assets/bg-main-mobile.png');
-    background-repeat:  no-repeat;
+    background-repeat: no-repeat;
     background-position: 25% 75%;
     background-size: 582px 780px;
-    z-index: 9;
-  }
-
-  .container {
-    padding: 0 $padding * 2;
-    background-color: transparent;
-    // border: 5px solid red;
   }
 }
+
 @media (min-width: $tablets) {
-  .header {
-    &::before {
-      background-image: url('../assets/bg-main-tablet.svg');
-      background-repeat:  no-repeat;
-      background-position: 25% 75%;
-      background-size: 582px 780px;
-    }
+  .header::before {
+    background-image: url('../assets/bg-main-tablet.svg');
+    background-repeat: no-repeat;
+    background-position: 25% 75%;
+    background-size: 582px 780px;
   }
 }
