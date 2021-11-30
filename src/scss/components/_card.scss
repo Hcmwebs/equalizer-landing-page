@@ -82,8 +82,10 @@
       .btn {
         font-size: 18px;
         font-weight: $bold;
-        height: 61px;
+        height: 60px;
         text-transform: initial;
+        @include flex(row, center, center);
+        gap: $gap;
       }
     }
   }
