@@ -2,47 +2,47 @@
 
 .footer {
   width: 100%;
-  margin-top: 440px;
+  max-width: 1110px;
+  margin-top: 405px;
+  padding: $padding $padding * 2;
   padding-bottom: $padding * 6.7;
+  @include flex(column, space-between, center);
+  gap: $gap * 6.4;
 
-  .container {
-    max-width: 1110px;
-    @include flex(column, space-between, center);
-    padding: $padding $padding * 2;
-    .footer--header {
-      width: 100%;
-      @include flex(column, space-between, flex-start);
-      gap: $gap * 3.2;
+  .footer--header {
+    width: 100%;
+    @include flex(column, space-between, flex-start);
+    gap: $gap * 3.2;
 
-      .logo {
-        .imgContainer {
-          width: 150px;
-        }
-      }
-      .credits {
-        .body2 {
-          margin: 0;
-        }
+    .logo {
+      .imgContainer {
+        width: 150px;
       }
     }
-    .footer--body {
-      width: 100%;
-      @include grid(center);
+    .credits {
+      .body2 {
+        margin: 0;
+      }
+    }
+  }
+  .footer--body {
+    width: 100%;
+    @include grid(center);
 
-      .socialLinks {
-        margin-top: 32px;
-        justify-self: start;
-        @include flex(row, center, center);
-        gap: $gap * 2;
+    .socialLinks {
+      width: 100px;
+      justify-self: start;
+      @include flex(row, center, center);
+      gap: $gap * 2;
 
-        svg {
-          cursor: pointer;
-          transition: $transition;
+      svg {
+        width: 20px;
+        height: 20px;
+        cursor: pointer;
+        transition: $transition;
 
-          &:hover {
-            transform: scale(1.02);
-            color: $primaryRed;
-          }
+        &:hover {
+          color: $primaryRed;
         }
       }
     }
@@ -51,22 +51,19 @@
 
 @media (min-width: $tablets) {
   .footer {
-    .container {
-      flex-direction: row;
+    margin-top: 180px;
+    flex-direction: row;
 
-      .footer--body {
-        justify-content: flex-end;
-      }
+    .footer--body {
+      justify-content: flex-end;
     }
   }
 }
 @media (min-width: $bigScreens) {
   .footer {
-    .container {
-      .footer--header {
-        flex-direction: row;
-        gap: $gap * 10;
-      }
+    .footer--header {
+      flex-direction: row;
+      gap: $gap * 10;
     }
   }
 }
