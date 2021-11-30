@@ -5,7 +5,6 @@
   @include grid(center);
   justify-content: start;
   gap: $gap * 3;
-  border: 5px solid red;
 
   .primaryHeading {
     font-size: 40px;
