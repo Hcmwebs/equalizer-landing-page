@@ -1,21 +1,23 @@
 @use '../abstracts' as *;
 
 .footer {
-  z-index: 9;
   width: 100%;
   margin-top: 440px;
   padding-bottom: $padding * 6.7;
 
   .container {
+    max-width: 1110px;
     @include flex(column, space-between, center);
     padding: $padding $padding * 2;
     .footer--header {
       width: 100%;
-      @include grid(center);
+      @include flex(column, space-between, flex-start);
       gap: $gap * 3.2;
 
       .logo {
-        justify-self: start;
+        .imgContainer {
+          width: 150px;
+        }
       }
       .credits {
         .body2 {
@@ -32,6 +34,38 @@
         justify-self: start;
         @include flex(row, center, center);
         gap: $gap * 2;
+
+        svg {
+          cursor: pointer;
+          transition: $transition;
+
+          &:hover {
+            transform: scale(1.02);
+            color: $primaryRed;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: $tablets) {
+  .footer {
+    .container {
+      flex-direction: row;
+
+      .footer--body {
+        justify-content: flex-end;
+      }
+    }
+  }
+}
+@media (min-width: $bigScreens) {
+  .footer {
+    .container {
+      .footer--header {
+        flex-direction: row;
+        gap: $gap * 10;
       }
     }
   }
