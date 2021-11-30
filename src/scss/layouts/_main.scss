@@ -3,7 +3,7 @@
 
 .main {
   width: 100%;
-  max-width: 100%;
+  max-width: 1110px;
   min-height: $fixedWidth * 1.5;
   @include grid(center);
   border-radius: $borderRadius;
@@ -12,7 +12,13 @@
 
 @media (min-width: $tablets) {
   .main {
+    margin-top: 250px;
     padding: 0 $padding * 2;
     justify-content: flex-start;
+  }
+}
+@media (min-width: $bigScreens) {
+  .main {
+    margin-top: 330px;
   }
 }
