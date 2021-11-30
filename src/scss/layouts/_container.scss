@@ -6,4 +6,59 @@
   @include grid(center);
   position: relative;
   gap: $gap * 6.4;
+  box-shadow: $shadow-4;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    max-width: 1440px;
+    padding: 0;
+    background-image: url('../assets/bg-main-mobile.png');
+    background-repeat: no-repeat;
+    background-position: 25% -20%;
+    background-size: auto;
+    background-blend-mode: normal;
+    z-index: 9;
+  }
+}
+
+@media (min-width: $tablets) {
+  .container {
+    &::before {
+      background-image: url('../assets/bg-main-tablet.png');
+      background-repeat: no-repeat;
+      background-position: 75% -25%;
+      background-size: auto;
+    }
+    &::after {
+      content: '';
+      position: absolute;
+      top: -60px;
+      right: -35px;
+      width: 267px;
+      height: 400px;
+      z-index: 9;
+      background: url('../assets/bg-pattern-1.svg') no-repeat center
+        center/cover;
+    }
+  }
+}
+@media (min-width: $bigScreens) {
+  .container {
+    &::before {
+      background-image: url('../assets/bg-main-desktop.png');
+      background-repeat: no-repeat;
+      background-position: 50% 50%;
+      background-size: auto;
+    }
+    &::after {
+      width: 312px;
+      height: 468px;
+      top: -35px;
+    }
+  }
 }
