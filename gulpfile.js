@@ -40,11 +40,11 @@ function jsTask() {
 
 //Images jsTask
 
-// function imgTask() {
-//   return src(files.imgPath).pipe(image()).pipe(dest('dist/assets'));
-// }
+function imgTask() {
+  return src(files.imgPath).pipe(image()).pipe(dest('dist/assets'));
+}
 
-// Cachebusting  task
+//Cachebusting  task
 const cbString = new Date().getTime();
 function cacheBustTask() {
   return src([files.htmlPath])
@@ -56,11 +56,14 @@ function cacheBustTask() {
 
 function watchTask() {
   watch(
-    [files.scssPath, files.jsPath, files.htmlPath],
-    parallel(scssTask, jsTask, cacheBustTask),
+    [files.scssPath, files.jsPath, files.htmlPath, files.imgPath],
+    parallel(scssTask, jsTask, imgTask, cacheBustTask),
   );
 }
 
 // Default task
 
-exports.default = series(parallel(scssTask, jsTask, cacheBustTask), watchTask);
+exports.default = series(
+  parallel(scssTask, jsTask, imgTask, cacheBustTask),
+  watchTask,
+);
