@@ -15,6 +15,6 @@
 .DS_Store
 .prettierignore
 
-/node_modules
-/src
-*gulpfile
+node_modules
+src
+gulpfile
