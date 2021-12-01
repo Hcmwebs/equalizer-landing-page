@@ -8,6 +8,7 @@
   padding-bottom: $padding * 6.7;
   @include flex(column, space-between, center);
   gap: $gap * 6.4;
+  z-index: 9;
 
   .footer--header {
     width: 100%;
@@ -36,10 +37,8 @@
       gap: $gap * 2;
 
       svg {
-        // width: 20px;
-        // height: 20px;
-        font-size: 1.5rem;
         cursor: pointer;
+        font-size: 1.5rem;
         transition: $transition;
 
         &:hover {
