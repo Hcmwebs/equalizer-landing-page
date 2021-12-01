@@ -23,7 +23,7 @@
     background-position: 25% -20%;
     background-size: auto;
     background-blend-mode: normal;
-    z-index: 9;
+    z-index: 1;
   }
 }
 
@@ -42,7 +42,7 @@
       right: -35px;
       width: 267px;
       height: 400px;
-      z-index: 9;
+      z-index: 1;
       background: url('../assets/bg-pattern-1.svg') no-repeat center
         center/cover;
     }
