@@ -1,4 +1,4 @@
- Frontend Mentor: Equalizer `landing Page solution
+ Frontend Mentor: [Equalizer landing Page solution](https://www.frontendmentor.io/challenges/equalizer-landing-page-7VJ4gp3DE/hub/equalizer-landing-page-CYlZ8d1ZA)
 
 This is my solution to the [equalizer landing page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/equalizer-landing-page-7VJ4gp3DE/hub/equalizer-landing-page-CYlZ8d1ZA). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
@@ -18,11 +18,11 @@ This is my solution to the [equalizer landing page challenge on Frontend Mentor]
 
 ## Overview
 
-### The challenge
+### The challenges
 
 Users should be able to:
 
-- See the optimal layout depending on the size of their devise's screen.
+- See the optimal layout depending on the size of their devices' screen.
 
 - See hover states for interactive elements.
 
