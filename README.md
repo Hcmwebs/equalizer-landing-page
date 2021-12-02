@@ -78,6 +78,8 @@ I'd like to learn more of how to change the colors of an image that is already a
 - [Google](https://www.google.com) - Probably **the** most valuable tool in a web developers arsenal, frontend or backend. Any search engine would do, though.
 - [W3Schools](https://www.w3schools.com)- With all the challenges of background images that I have, this page came in handy for me. I learnt a lot about positioning and sizing of the background images.The **_Play it>>_**, helped me see the clear picture.
 
+- [CSS-Tricks](https://css-tricks.com) - After scratching my head for a while, I visited CSS-Tricks to learn more about changing colors of the svgs. It is amazing how fast and easy this is. Check out the **_Change Color of SVG on Hover_** article by [@chriscoyer](https://twitter.com/chriscoyier).
+
 ## Author
 
 - Website - [hcmwebs](https://hcmwebs.com/) - Still needs a lot to be done!
@@ -86,4 +88,5 @@ I'd like to learn more of how to change the colors of an image that is already a
 
 ## Acknowledgments
 
-- **[Frontend Mentor](https://www.frontendmentor.io/)**. This has been a great game changer for my projects practice. With every project, there is a lot to learn and without a doubt, comes loaded with fun.
+- **[Frontend Mentor](https://www.frontendmentor.io/)**: This has been a great game changer for my projects practice. With every project, there is a lot to learn and without a doubt, comes loaded with fun.
+- **[Chris Coyer](https://twitter.com/chriscoyier)**: Without your clearly explained article on SVGs, I would still be scratching my head trying to figure out how to go about it. Thank you very much for sharing your knowledge through this and all your work.
